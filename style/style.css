@@ -133,9 +133,8 @@
 }
 #nav-links img {
     width: 1.7vw;
-    padding-bottom: 0.5vw;
 }
 #nav-links a:hover{
     transform: scale(1.1);
-    
+
 }
