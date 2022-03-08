@@ -6,6 +6,11 @@
     src: url(font/PressStart2P-Regular.ttf);
 }
 
+@font-face {
+    font-family: chalkboard;
+    src: url(font/chalkboard.otf);
+}
+
 .outer-div{
     position: fixed;
     left: 0;
@@ -18,7 +23,7 @@
     background-image: url(../images/WAVE_BACKGROUND.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: no;
+    background-size: auto;
 }
 
 .inner-div{
@@ -47,7 +52,7 @@
     text-align: center;
     padding-top: 0.3vw;
     font-size: 1.5vw;
-    font-family: "chalkboard SE";
+    font-family: "chalkboard";
 }
 .arrow-down {
     position: absolute;
@@ -74,16 +79,21 @@
     background-color: rgb(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: [start] 100% [end];
-    grid-template-rows: [work] 30% [about] 30% [contact] 30% [links] auto;
+    grid-template-rows: [work] 30% [about] 30% [contact] 30% [links] auto [end];
 }
-.main-nav a { 
+.nav { 
     transform: rotate(90deg);
     color: white;
-    font-family: "chalkboard SE";
+    font-family: "chalkboard";
 }
-.main-nav a:link, a:visited, a:active, a:hover{
+.main-nav a:link, a:visited, a:active{
     text-decoration: none;
 }
+.nav:hover {
+    transform: scale(1.1) rotate(90deg);
+    color: #bdbdbd;
+}
+
 #nav-work {
     grid-row-start: work;
     grid-row-end: about;
@@ -110,4 +120,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#nav-links {
+    grid-row-start: links;
+    grid-row-end: end;
+    grid-column-start: start;
+    grid-column-end: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-links img {
+    width: 1.7vw;
+    padding-bottom: 0.5vw;
+}
+#nav-links a:hover{
+    transform: scale(1.1);
 }
