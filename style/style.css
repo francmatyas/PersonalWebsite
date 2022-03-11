@@ -33,7 +33,7 @@ html,body{
 .container {
     float: left;
     height: 100%;
-    width: calc(100% - 4vw)
+    width: calc(100% - 4vw);
 }
 
 .intro-outer-div{
@@ -102,7 +102,7 @@ html,body{
     width: 4vw;
     display: grid;
     grid-template-columns: [start] 100% [end];
-    grid-template-rows: [work] 30% [about] 30% [contact] 30% [links] auto [end];
+    grid-template-rows: [top] 10% [work] 25% [about] 25% [contact] 25% [links] auto [end];
 }
 .nav { 
     transform: rotate(90deg);
@@ -155,9 +155,24 @@ html,body{
     align-items: center;
 }
 #nav-links img {
-    width: 1.7vw;
+    width: 2.5vw;
 }
 #nav-links a:hover{
+    transform: scale(1.1);
+}
+#scroll-top { 
+    grid-row-start: top;
+    grid-row-end: work;
+    grid-column-start: start;
+    grid-column-end: end;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}  
+#scroll-top img {
+    width: 2.3vw;
+}
+#scroll-top img:hover {
     transform: scale(1.1);
 }
 
