@@ -10,6 +10,10 @@
     font-family: chalkboard;
     src: url(font/chalkboard.ttf);
 }
+@font-face {
+    font-family: Wingdings3;
+    src: url(font/WINGDNG3.TTF);
+}
 html{
     overflow: scroll;
     overflow-x: hidden;
@@ -80,7 +84,7 @@ html,body{
     left: 0;
     right: 0;
     text-align: center;
-    font-family:"Wingdings 3";
+    font-family:"Wingdings3";
     transform: rotate(180deg);
     font-size: 3vw;
     cursor: pointer;
