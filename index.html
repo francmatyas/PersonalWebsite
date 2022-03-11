@@ -10,17 +10,17 @@
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
-    <import src="src/script.js"></import>
+    <script src="src/script.js"></script>
 </head>
 <body>
     <div class="main-nav">
-        <a href="#scroll-top"><img src="images/up-arrow.png" alt="arrow"></a>
-        <a href="#" class="nav" id="nav-work">Work</a>
-        <a href="#" class="nav" id="nav-about">About</a>
-        <a href="#" class="nav" id="nav-contact">Contact</a>
+        <img src="images/up-arrow-white.png" alt="arrow" id="scroll-top" class="unselectable">
+        <a href="#" class="nav unselectable" id="nav-work">Work</a>
+        <a href="#" class="nav unselectable" id="nav-about">About</a>
+        <a href="#" class="nav unselectable" id="nav-contact">Contact</a>
         <div id="nav-links"> 
-            <a href="https://discordapp.com/users/285102255164751874/"><img src="images/discord.png" alt="link to discord"></a>
-            <a href="https://twitter.com/matyas_franc"><img src="images/twitter.png" alt="link to twitter"></a>
+            <a href="https://discordapp.com/users/285102255164751874/"><img src="images/discord.png" alt="link to discord" class="unselectable"></a>
+            <a href="https://twitter.com/matyas_franc"><img src="images/twitter.png" alt="link to twitter" class="unselectable"></a>
         </div>
     </div> 
     <div class="container">
@@ -30,12 +30,12 @@
                     <h1>Welcome {user};</h1>
                     <p>I'm Matyáš Franc, junior fullstack developer.</p>
                 </div>
-                <div class="arrow-down">
+                <div class="arrow-down unselectable">
                     <p></p>
                 </div>
             </div>
         </div>
-        <div class="work">
+        <div class="work" id="scroll-to">
     
         </div>
         <div class="about">
