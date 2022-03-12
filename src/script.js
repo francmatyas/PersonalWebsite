@@ -7,6 +7,15 @@ $(document).ready(function() {
         })
     })
     $(".arrow-down").click(function() {
-        document.getElementById("scroll-to").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+        document.getElementById("work").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    })
+    $("#nav-work").click(function() {
+        document.getElementById("work").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    })
+    $("#nav-about").click(function() {
+        document.getElementById("about").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    })
+    $("#nav-contact").click(function() {
+        document.getElementById("contact").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
     })
 })

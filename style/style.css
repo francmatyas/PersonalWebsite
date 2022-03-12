@@ -118,7 +118,7 @@ html,body{
     width: 4vw;
     display: grid;
     grid-template-columns: [start] 100% [end];
-    grid-template-rows: [top] 10% [work] 25% [about] 25% [contact] 25% [links] auto [end];
+    grid-template-rows: [top] 7% [work] 27% [about] 27% [contact] 27% [links] auto [end];
 }
 .nav { 
     transform: rotate(90deg);
@@ -198,19 +198,37 @@ html,body{
 
 .work {
     position: relative;
-    height: 100%;
     width: 100%;
-    background-color: yellow;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/abstract-blue.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
 }
 .about {
     position: relative;
-    height: 100%;
     width: 100%;
-    background-color: cyan;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/abstract-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
 }
 .contact {
     position: relative;
-    height: 100%;
     width: 100%;
-    background-color: red;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/abstract-yellow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
 }
